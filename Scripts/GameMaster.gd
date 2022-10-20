@@ -32,6 +32,9 @@ func _ready():
 	var startpos = tile_positions[rng.randi_range(0,tile_positions.size())]
 	startpos.add_child(start_instance)
 	
+	# Places the end
+	tile_positions[rng.randi_range(0,tile_positions.size()-1)].add_child(end_tile.instance())
+	
 	# Places the Spider at the start
 	var spider_instance = spider.instance()
 	add_child(spider_instance)
