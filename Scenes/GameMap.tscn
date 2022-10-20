@@ -1,10 +1,346 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Prefabs/Spider.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Prefabs/Tiles/xTile.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/GameMaster.gd" type="Script" id=6]
 
 [node name="GameMap" type="Node2D"]
+script = ExtResource( 6 )
 
-[node name="xTile" parent="." instance=ExtResource( 2 )]
+[node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="Spider" parent="." instance=ExtResource( 1 )]
+[node name="Tiles" type="Node2D" parent="."]
+
+[node name="TilePos1" type="Position2D" parent="Tiles"]
+position = Vector2( 153, 51 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos2" type="Position2D" parent="Tiles"]
+position = Vector2( 255, 51 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos3" type="Position2D" parent="Tiles"]
+position = Vector2( 357, 51 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos4" type="Position2D" parent="Tiles"]
+position = Vector2( 459, 51 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos5" type="Position2D" parent="Tiles"]
+position = Vector2( 561, 51 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos6" type="Position2D" parent="Tiles"]
+position = Vector2( 663, 51 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos7" type="Position2D" parent="Tiles"]
+position = Vector2( 765, 51 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos8" type="Position2D" parent="Tiles"]
+position = Vector2( 867, 51 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos9" type="Position2D" parent="Tiles"]
+position = Vector2( 51, 153 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos10" type="Position2D" parent="Tiles"]
+position = Vector2( 153, 153 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos11" type="Position2D" parent="Tiles"]
+position = Vector2( 255, 153 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos12" type="Position2D" parent="Tiles"]
+position = Vector2( 357, 153 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos13" type="Position2D" parent="Tiles"]
+position = Vector2( 459, 153 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos14" type="Position2D" parent="Tiles"]
+position = Vector2( 561, 153 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos15" type="Position2D" parent="Tiles"]
+position = Vector2( 663, 153 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos16" type="Position2D" parent="Tiles"]
+position = Vector2( 765, 153 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos17" type="Position2D" parent="Tiles"]
+position = Vector2( 867, 153 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos18" type="Position2D" parent="Tiles"]
+position = Vector2( 969, 153 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos19" type="Position2D" parent="Tiles"]
+position = Vector2( 51, 255 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos20" type="Position2D" parent="Tiles"]
+position = Vector2( 153, 255 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos21" type="Position2D" parent="Tiles"]
+position = Vector2( 255, 255 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos22" type="Position2D" parent="Tiles"]
+position = Vector2( 357, 255 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos23" type="Position2D" parent="Tiles"]
+position = Vector2( 459, 255 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos24" type="Position2D" parent="Tiles"]
+position = Vector2( 561, 255 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos25" type="Position2D" parent="Tiles"]
+position = Vector2( 663, 255 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos26" type="Position2D" parent="Tiles"]
+position = Vector2( 765, 255 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos27" type="Position2D" parent="Tiles"]
+position = Vector2( 867, 255 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos28" type="Position2D" parent="Tiles"]
+position = Vector2( 969, 255 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos29" type="Position2D" parent="Tiles"]
+position = Vector2( 51, 357 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos30" type="Position2D" parent="Tiles"]
+position = Vector2( 153, 357 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos31" type="Position2D" parent="Tiles"]
+position = Vector2( 255, 357 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos32" type="Position2D" parent="Tiles"]
+position = Vector2( 357, 357 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos33" type="Position2D" parent="Tiles"]
+position = Vector2( 459, 357 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos34" type="Position2D" parent="Tiles"]
+position = Vector2( 561, 357 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos35" type="Position2D" parent="Tiles"]
+position = Vector2( 663, 357 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos36" type="Position2D" parent="Tiles"]
+position = Vector2( 765, 357 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos37" type="Position2D" parent="Tiles"]
+position = Vector2( 867, 357 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos38" type="Position2D" parent="Tiles"]
+position = Vector2( 969, 357 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos39" type="Position2D" parent="Tiles"]
+position = Vector2( 51, 459 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos40" type="Position2D" parent="Tiles"]
+position = Vector2( 153, 459 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos41" type="Position2D" parent="Tiles"]
+position = Vector2( 255, 459 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos42" type="Position2D" parent="Tiles"]
+position = Vector2( 357, 459 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos43" type="Position2D" parent="Tiles"]
+position = Vector2( 459, 459 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos44" type="Position2D" parent="Tiles"]
+position = Vector2( 561, 459 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos45" type="Position2D" parent="Tiles"]
+position = Vector2( 663, 459 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos46" type="Position2D" parent="Tiles"]
+position = Vector2( 765, 459 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos47" type="Position2D" parent="Tiles"]
+position = Vector2( 867, 459 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos48" type="Position2D" parent="Tiles"]
+position = Vector2( 969, 459 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos49" type="Position2D" parent="Tiles"]
+position = Vector2( 153, 561 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos50" type="Position2D" parent="Tiles"]
+position = Vector2( 255, 561 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos51" type="Position2D" parent="Tiles"]
+position = Vector2( 357, 561 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos52" type="Position2D" parent="Tiles"]
+position = Vector2( 459, 561 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos53" type="Position2D" parent="Tiles"]
+position = Vector2( 561, 561 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos54" type="Position2D" parent="Tiles"]
+position = Vector2( 663, 561 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos55" type="Position2D" parent="Tiles"]
+position = Vector2( 765, 561 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
+
+[node name="TilePos56" type="Position2D" parent="Tiles"]
+position = Vector2( 867, 561 )
+__meta__ = {
+"_gizmo_extents_": 51.0
+}
