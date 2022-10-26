@@ -1,22 +1,24 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scripts/ScoreboardEntry.gd" type="Script" id=1]
+[ext_resource path="res://Graphics/SR_Theme.tres" type="Theme" id=2]
 
 [node name="ScoreboardEntry" type="HBoxContainer"]
 pause_mode = 1
 margin_right = 40.0
 margin_bottom = 40.0
+theme = ExtResource( 2 )
 script = ExtResource( 1 )
 
 [node name="NameLbl" type="Label" parent="."]
-margin_top = 13.0
-margin_right = 30.0
+margin_top = 12.0
+margin_right = 45.0
 margin_bottom = 27.0
 text = "Sex :"
 
 [node name="ScoreLbl" type="Label" parent="."]
-margin_left = 34.0
-margin_top = 13.0
-margin_right = 74.0
+margin_left = 49.0
+margin_top = 12.0
+margin_right = 94.0
 margin_bottom = 27.0
 text = "69420"

@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 
 const SQLite = preload("res://addons/godot-sqlite/bin/gdsqlite.gdns")
 var db	# Database Object

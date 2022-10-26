@@ -17,6 +17,5 @@ func _ready():
 func check_for_wall():
 	pass # TODO make the spider turn when colliding with walls
 
-# TODO make the spider properly move
 func _process(_delta):
 	var __ = move_and_slide(vel*move_speed)

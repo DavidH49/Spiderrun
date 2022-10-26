@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.svg-d1ce252e2122127b0ef52623606d9896.stex"
+path="res://.import/Screenshot 2022-10-26 110515.png-4a65c889bf5e3537c307bc31965e9843.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/gdn-sqlite/icon.svg"
-dest_files=[ "res://.import/icon.svg-d1ce252e2122127b0ef52623606d9896.stex" ]
+source_file="res://Screenshot 2022-10-26 110515.png"
+dest_files=[ "res://.import/Screenshot 2022-10-26 110515.png-4a65c889bf5e3537c307bc31965e9843.stex" ]
 
 [params]
 

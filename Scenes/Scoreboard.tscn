@@ -1,8 +1,9 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scripts/Scoreboard.gd" type="Script" id=1]
+[ext_resource path="res://Graphics/SR_Theme.tres" type="Theme" id=2]
 
-[node name="Scoreboard" type="Node2D"]
+[node name="Scoreboard" type="Control"]
 script = ExtResource( 1 )
 
 [node name="PlayerIDInp" type="TextEdit" parent="."]
@@ -10,18 +11,21 @@ margin_left = 13.0
 margin_top = 12.0
 margin_right = 403.0
 margin_bottom = 52.0
+theme = ExtResource( 2 )
 
 [node name="PlayerScoreInp" type="TextEdit" parent="."]
 margin_left = 13.0
 margin_top = 104.0
 margin_right = 403.0
 margin_bottom = 144.0
+theme = ExtResource( 2 )
 
 [node name="SendBtn" type="Button" parent="."]
 margin_left = 12.0
 margin_top = 525.0
 margin_right = 192.0
 margin_bottom = 585.0
+theme = ExtResource( 2 )
 text = "Send"
 
 [node name="GetBtn" type="Button" parent="."]
@@ -29,6 +33,7 @@ margin_left = 251.0
 margin_top = 525.0
 margin_right = 431.0
 margin_bottom = 585.0
+theme = ExtResource( 2 )
 text = "Get"
 
 [node name="ScoresBox" type="VBoxContainer" parent="."]
@@ -36,6 +41,7 @@ margin_left = 576.0
 margin_top = 64.0
 margin_right = 832.0
 margin_bottom = 512.0
+theme = ExtResource( 2 )
 
 [connection signal="pressed" from="SendBtn" to="." method="_on_SendBtn_pressed"]
 [connection signal="pressed" from="GetBtn" to="." method="_on_GetBtn_pressed"]
