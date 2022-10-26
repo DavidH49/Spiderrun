@@ -30,12 +30,14 @@ func _ready():
 	rng.randomize()
 	var start_instance = start_tile.instance()
 	var startpos = tile_positions[rng.randi_range(0,tile_positions.size())]
+	for c in startpos.get_children():
+		c.queue_free()
 	startpos.add_child(start_instance)
 	
 	# Places the end
-	tile_positions[rng.randi_range(0,tile_positions.size()-1)].add_child(end_tile.instance())
+	#tile_positions[rng.randi_range(0,tile_positions.size()-1)].add_child(end_tile.instance())
 	
 	# Places the Spider at the start
 	var spider_instance = spider.instance()
-	add_child(spider_instance)
 	spider_instance.position = startpos.position
+	add_child(spider_instance)
