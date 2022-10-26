@@ -8,7 +8,6 @@ var tile_assets = [
 ]
 var start_tile = preload("res://Prefabs/Tiles/startTile.tscn")
 var end_tile = preload("res://Prefabs/Tiles/endTile.tscn")
-var spider = preload("res://Prefabs/Spider.tscn")
 
 var tile_positions = []
 
@@ -38,6 +37,4 @@ func _ready():
 	#tile_positions[rng.randi_range(0,tile_positions.size()-1)].add_child(end_tile.instance())
 	
 	# Places the Spider at the start
-	var spider_instance = spider.instance()
-	spider_instance.position = startpos.position
-	add_child(spider_instance)
+	$Spider.position = startpos.position

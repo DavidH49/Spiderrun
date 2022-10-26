@@ -21,7 +21,7 @@ shape = SubResource( 1 )
 [node name="Ray" type="Node2D" parent="."]
 
 [node name="Forward" type="RayCast2D" parent="Ray"]
-cast_to = Vector2( 0, -8 )
+cast_to = Vector2( 0, -20 )
 
 [node name="Left" type="RayCast2D" parent="Ray"]
 cast_to = Vector2( -8, 0 )
