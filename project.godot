@@ -11,8 +11,10 @@ config_version=4
 [application]
 
 config/name="Spiderrun"
+config/description="Spider Run"
 run/main_scene="res://Scenes/GameMap.tscn"
-config/icon="res://icon.png"
+boot_splash/image="res://addons/EditorImage/Background.png"
+config/icon="res://Graphics/spider.png"
 
 [autoload]
 

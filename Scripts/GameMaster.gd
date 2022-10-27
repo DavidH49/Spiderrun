@@ -25,9 +25,8 @@ func _ready():
 		ti = tile_assets[2]
 		tile_assets.append(ti)
 	
-	print(tile_assets)
 	
-	var rng = RandomNumberGenerator.new()
+	var rng : RandomNumberGenerator = RandomNumberGenerator.new()
 	
 	tile_positions = $Tiles.get_children()
 	
@@ -42,7 +41,7 @@ func _ready():
 	# Places the start
 	rng.randomize()
 	var start_instance = start_tile.instance()
-	var startpos = tile_positions[rng.randi_range(0,tile_positions.size())]
+	var startpos = tile_positions[rng.randi_range(0,tile_positions.size()-1)]
 	for c in startpos.get_children():
 		c.queue_free()
 	startpos.add_child(start_instance)

@@ -2,11 +2,11 @@ extends StaticBody2D
 
 onready var directions : Array = [
 	0,
+	PI / 2,
 	PI,
-	PI + (PI/2),
-	PI * 2
+	PI + (PI / 2)
 ]
-var used = false
+var used : bool = false
 
 func _ready():
 	var rng : RandomNumberGenerator = RandomNumberGenerator.new()

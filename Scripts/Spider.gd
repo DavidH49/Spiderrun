@@ -16,14 +16,8 @@ func _ready():
 
 func check_for_wall():
 	if forward.is_colliding():
-		rotate(PI)
-		vel = global_transform.basis_xform(vel)
-		
-		if left.is_colliding():
-			pass
-		if right.is_colliding():
-			pass
+		pass
 
-func _process(_delta):
+func _physics_process(_delta):
 	check_for_wall()
 	var __ = move_and_slide(vel*move_speed)
