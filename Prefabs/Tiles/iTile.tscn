@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Graphics/Tiles/iTile.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Tile.gd" type="Script" id=2]
@@ -6,6 +6,9 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 20, 51 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 48, 49 )
 
 [node name="iTile" type="StaticBody2D" groups=["Obstacle"]]
 script = ExtResource( 2 )
@@ -29,4 +32,10 @@ shape = SubResource( 1 )
 position = Vector2( 31, 0 )
 shape = SubResource( 1 )
 
+[node name="UsedArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UsedArea"]
+shape = SubResource( 2 )
+
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="body_entered" from="UsedArea" to="." method="_on_UsedArea_body_entered"]

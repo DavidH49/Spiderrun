@@ -16,3 +16,8 @@ func _ready():
 func _on_Button_pressed():
 	if not used:
 		rotate(deg2rad(90))
+
+
+func _on_UsedArea_body_entered(body):
+	if body.is_in_group("Spider"):
+		used = true
