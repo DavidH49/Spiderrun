@@ -14,14 +14,14 @@ var walk : bool = false
 
 func check_for_wall():
 	if forward.is_colliding():
-		if left.is_colliding():
+		if left.is_colliding() and not right.is_colliding():
 			rotate(PI/2)
-		elif right.is_colliding():
+		elif right.is_colliding() and not left.is_colliding():
 			rotate(-PI/2)
 
 func _physics_process(_delta):
 	if Input.is_action_just_pressed("WALK"):
-		walk = !walk
+		walk = true
 
 	if walk:
 		check_for_wall()
