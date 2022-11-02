@@ -9,18 +9,20 @@ onready var right : RayCast2D = $Ray/Right
 # Movement Variables
 var move_speed : float = 40
 var vel : Vector2
+var walk : bool = false
 
-func _ready():
-	vel = global_transform.basis_xform(Vector2.UP)
-	
 
 func check_for_wall():
 	if forward.is_colliding():
 		if left.is_colliding():
-			vel = global_transform.basis_xform(Vector2.RIGHT)
+			rotate(PI/2)
 		elif right.is_colliding():
-			vel = global_transform.basis_xform(Vector2.LEFT)
+			rotate(-PI/2)
 
 func _physics_process(_delta):
-	check_for_wall()
-	var __ = move_and_slide(vel*move_speed)
+	if Input.is_action_just_pressed("WALK"):
+		walk = !walk
+
+	if walk:
+		check_for_wall()
+		var __ = move_and_slide(vel*move_speed)

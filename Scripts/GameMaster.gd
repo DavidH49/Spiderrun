@@ -53,3 +53,4 @@ func _ready():
 	
 	# Places the Spider at the start
 	$Spider.position = startpos.position
+	$Spider.rotation = start_instance.rotation
