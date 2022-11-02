@@ -1,8 +1,17 @@
 extends Node
 
 
-var player_name
-var points = 0
+var player_name : String
+var points : int = 0
+
+var default_points_per_tile : int = 1
+var points_per_tile : int = default_points_per_tile
+
+
+func score():
+	points += points_per_tile
+
+
 
 var spider_facts : Array = [
 	"Male red widows force feed themselves to females.",

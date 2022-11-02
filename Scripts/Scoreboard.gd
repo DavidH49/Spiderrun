@@ -8,13 +8,14 @@ var scores : Array
 onready var sb_entry = preload("res://Prefabs/ScoreboardEntry.tscn")
 
 
-
+# Connects to the database
 func connect_db():
 	db = SQLite.new()
 	db.path = db_name
 	db.open_db()
 
 
+# Creates new DB entry for new players
 func commit(player_name, player_score):
 	connect_db()
 	

@@ -20,4 +20,5 @@ func _on_Button_pressed():
 
 func _on_UsedArea_body_entered(body):
 	if body.is_in_group("Spider"):
+		Globals.score()
 		used = true

@@ -8,15 +8,18 @@ onready var right : RayCast2D = $Ray/Right
 
 # Movement Variables
 var move_speed : float = 40
-var vel : Vector2 = Vector2.UP
+var vel : Vector2
 
 func _ready():
-	vel = global_transform.basis_xform(vel)
+	vel = global_transform.basis_xform(Vector2.UP)
 	
 
 func check_for_wall():
 	if forward.is_colliding():
-		pass
+		if left.is_colliding():
+			vel = global_transform.basis_xform(Vector2.RIGHT)
+		elif right.is_colliding():
+			vel = global_transform.basis_xform(Vector2.LEFT)
 
 func _physics_process(_delta):
 	check_for_wall()

@@ -14,14 +14,15 @@ var tile_positions : Array = []
 
 
 func _ready():
+	# Makes certain tiles appear more often than others
 	var ti : PackedScene
-	for i in range(tile_probability[0]):
+	for _i in range(tile_probability[0]):
 		ti = tile_assets[0]
 		tile_assets.append(ti)
-	for i in range(tile_probability[1]):
+	for _i in range(tile_probability[1]):
 		ti = tile_assets[1]
 		tile_assets.append(ti)
-	for i in range(tile_probability[2]):
+	for _i in range(tile_probability[2]):
 		ti = tile_assets[2]
 		tile_assets.append(ti)
 	
@@ -30,6 +31,7 @@ func _ready():
 	
 	tile_positions = $Tiles.get_children()
 	
+	# Places the tiles
 	for t in tile_positions:
 		rng.randomize()
 		var randval = rng.randi_range(0,tile_assets.size()-1)
